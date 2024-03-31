@@ -170,7 +170,7 @@ import useStyles from './styles';
                             {/* {user.result.name && */}
                              
                               <>
-                              <Typography  variant="h6"> <div className=" me-2" ><BsFillPersonFill  className='login-user-icon'/>{` Hi, ${userName}`}</div></Typography>
+                              <p  variant="h6"> <div className=" me-2" ><BsFillPersonFill  className='login-user-icon'/>{` Hi, ${userName}`}</div></p>
                               <Button variant="contained"  color="secondary" onClick={logout}>Logout</Button>
                               </>                                 
                             
