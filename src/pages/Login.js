@@ -17,7 +17,7 @@
 //   const handleLogin = (e) => {
 //     e.preventDefault();
 //     axios
-//       .post('http://localhost:5001/authl/login', { email, password })
+//       .post('https://research-portal-server-9.onrender.com/authl/login', { email, password })
 //       .then((result) => {
 //         console.log(result.data);
 //         if (result.data.message === 'ok') {
@@ -152,7 +152,7 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     axios
-      .post('http://localhost:5001/authl/login', { email, password })
+      .post('https://research-portal-server-9.onrender.com/authl/login', { email, password })
       .then((result) => {
 
         console.log(result.data);
@@ -195,7 +195,7 @@ const Login = () => {
       });
       const checkAuthentication = async () => {
         try {
-          const response = await axios.get('http://localhost:5001/check-auth-status');
+          const response = await axios.get('https://research-portal-server-9.onrender.com/check-auth-status');
           
           const isAuthenticated = response.data.isAuthenticated;
           console.log(isAuthenticated)    

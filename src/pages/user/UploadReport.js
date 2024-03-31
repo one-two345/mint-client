@@ -10,7 +10,7 @@
 //   const email1 = email;
 //   useEffect(
 //     function(){
-//       axios.get('http://localhost:5001/admin/userStatus/fetch-'+email1)
+//       axios.get('https://research-portal-server-9.onrender.com/admin/userStatus/fetch-'+email1)
 //       .then((result)=>{
 //         console.log(result);
 //         setProjects(result.data);
@@ -29,7 +29,7 @@
 //     formData.append('file', file);
 //     console.log(file);
 
-//     axios.post('http://localhost:5001/report/upload/'+ projects[0].projectTitle +"-" + projects[0]._id, formData, config)
+//     axios.post('https://research-portal-server-9.onrender.com/report/upload/'+ projects[0].projectTitle +"-" + projects[0]._id, formData, config)
 //     .then((res)=>{console.log(res); window.alert("Report Submitted Successfully!")})
 //     .catch(err=>console.log(err))
 
@@ -45,7 +45,7 @@
 //     formData.append('file', file);
 //     console.log(file);
 
-//     axios.post('http://localhost:5001/projectFiles/upload/'+ projects[0].status +"-" + projects[0]._id, formData, config)
+//     axios.post('https://research-portal-server-9.onrender.com/projectFiles/upload/'+ projects[0].status +"-" + projects[0]._id, formData, config)
 //     .then((res)=>{console.log(res); window.alert("Report Submitted Successfully!")})
 //     .catch(err=>console.log(err))
 
@@ -171,7 +171,7 @@ const UploadReport = ({email}) => {
   const email1 = user.email
   useEffect(
     function(){
-      axios.get('http://localhost:5001/admin/userStatus/fetch-'+email1)
+      axios.get('https://research-portal-server-9.onrender.com/admin/userStatus/fetch-'+email1)
       .then((result)=>{
         console.log(result);
         setProjects(result.data);
@@ -190,7 +190,7 @@ const UploadReport = ({email}) => {
     formData.append('file', file);
     console.log(file);
 
-    axios.post('http://localhost:5001/report/upload/'+ projects[0].projectTitle +"-" + projects[0]._id, formData, config)
+    axios.post('https://research-portal-server-9.onrender.com/report/upload/'+ projects[0].projectTitle +"-" + projects[0]._id, formData, config)
     .then((res)=>{console.log(res); window.alert("Report Submitted Successfully!")})
     .catch(err=>console.log(err))
 
@@ -206,7 +206,7 @@ const UploadReport = ({email}) => {
     formData.append('file', file);
     console.log(file);
 
-    axios.post('http://localhost:5001/projectFiles/upload/'+ projects[0].status +"-" + projects[0]._id, formData, config)
+    axios.post('https://research-portal-server-9.onrender.com/projectFiles/upload/'+ projects[0].status +"-" + projects[0]._id, formData, config)
     .then((res)=>{console.log(res); window.alert("Report Submitted Successfully!")})
     .catch(err=>console.log(err))
 

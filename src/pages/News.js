@@ -10,7 +10,7 @@ const News = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5001/news')
+      .get('https://research-portal-server-9.onrender.com/news')
       .then(response => {
         const parsedData =
           typeof response.data === 'string'

@@ -22,7 +22,7 @@
 //   useEffect(() => {
 
 //     axios.defaults.withCredentials = true;
-//     axios.get('http://localhost:5001/userd/dashboard') // Update the route path here
+//     axios.get('https://research-portal-server-9.onrender.com/userd/dashboard') // Update the route path here
 //       .then((result) => {
 //         console.log(result)
 //         if (result.data.message === 'ok') {
@@ -138,8 +138,7 @@ const UserDashboard = () => {
   const [selectedOption, setSelectedOption] = useState(null);
   const location = useLocation();
   //const {email} = location.state;
-  const { user } = useAuthContext();
-  console.log(user)
+
 
  
   const navigate = useNavigate();
@@ -161,7 +160,7 @@ const UserDashboard = () => {
     }
     const checkAuthentication = async () => {
       try {
-        const response = await axios.get('http://localhost:5001/check-auth-status');
+        const response = await axios.get('https://research-portal-server-9.onrender.com/check-auth-status');
         
         const isAuthenticated = response.data.isAuthenticated;
         console.log(isAuthenticated)    

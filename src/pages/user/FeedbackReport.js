@@ -9,7 +9,7 @@
 //   const email1 = email;
 //   useEffect(
 //     function(){
-//       axios.post('http://localhost:5001/report/find', {email:email1})
+//       axios.post('https://research-portal-server-9.onrender.com/report/find', {email:email1})
 //       .then((result)=>{console.log(result.data); setReports(result.data);})
 //       .catch(err=>console.log(err))
 //     }
@@ -83,7 +83,7 @@ const FeedbackReport = () => {
   const email1 = user.email
   useEffect(
     function(){
-      axios.post('http://localhost:5001/report/find', {email:email1})
+      axios.post('https://research-portal-server-9.onrender.com/report/find', {email:email1})
       .then((result)=>{console.log(result.data); setReports(result.data);})
       .catch(err=>console.log(err))
     }

@@ -10,7 +10,7 @@
 //   //console.log(email1);
 //   useEffect(
 //     function(){
-//       axios.get('http://localhost:5001/admin/appointment/load-'+email1)
+//       axios.get('https://research-portal-server-9.onrender.com/admin/appointment/load-'+email1)
 //       .then((result)=>{
 //         setAppoint(result.data);
 //         //console.log(result);
@@ -63,8 +63,8 @@
 //   const projectID = id.split('-')[0];
 //   const text = document.getElementById(projectID+"-Message");
 //   const message = {message:text.value};
-//   // axios.get('http://localhost:5001/admin/appointment/setStatus-'+id)
-//   axios.post('http://localhost:5001/admin/appointment/setStatus-'+id, message)
+//   // axios.get('https://research-portal-server-9.onrender.com/admin/appointment/setStatus-'+id)
+//   axios.post('https://research-portal-server-9.onrender.com/admin/appointment/setStatus-'+id, message)
 //   .then(result=>console.log(result))
 //   .catch(err=>console.log(err));
 //   window.location.reload(false);
@@ -135,7 +135,7 @@ const ConfirmAppointment = () => {
   //console.log(email1);
   useEffect(
     function(){
-      axios.get('http://localhost:5001/admin/appointment/load-'+email1)
+      axios.get('https://research-portal-server-9.onrender.com/admin/appointment/load-'+email1)
       .then((result)=>{
         setAppoint(result.data);
         //console.log(result);
@@ -189,8 +189,8 @@ async function updateStatus(id){
   const projectID = id.split('-')[0];
   const text = document.getElementById(projectID+"-Message");
   const message = {message:text.value};
-  // axios.get('http://localhost:5001/admin/appointment/setStatus-'+id)
-  await axios.post('http://localhost:5001/admin/appointment/setStatus-'+id, message)
+  // axios.get('https://research-portal-server-9.onrender.com/admin/appointment/setStatus-'+id)
+  await axios.post('https://research-portal-server-9.onrender.com/admin/appointment/setStatus-'+id, message)
   .then(result=>console.log(result))
   .catch(err=>console.log(err));
   window.location.reload(false);

@@ -78,7 +78,7 @@ const ProjectIdea = ({ nextStep, prevStep }) => {
     }
     try {
       const response = await axios.put(
-        "http://localhost:5001/auth/submitProject",
+        "https://research-portal-server-9.onrender.com/auth/submitProject",
         formData
       );
       console.log(response);

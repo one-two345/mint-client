@@ -8,6 +8,7 @@ import Vision from '../images/AboutUs/vision.jpg'
 import Mission from '../images/AboutUs/mission.jpg'
 import Value from '../images/AboutUs/values.jpg'
 import Leaders from "../components/AboutUsComponents/Leaders";
+import AboutUsSection from '../components/AboutUsComponents/AboutUsSection'
 import image1 from "../images/News/news1.png"
 import image2 from "../images/News/news2.jpeg"
 import image3 from "../images/News/news3.jpeg"
@@ -71,6 +72,13 @@ function AboutUs() {
         
        
    
+    <div>
+      <br /> <br />
+      <AboutUsSection />
+      <OrganizationStructure />
+      <Leaders />
+    </div>
+  
 
         <section >
           <br/><br/><br/><br/>
